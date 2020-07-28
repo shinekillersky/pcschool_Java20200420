@@ -1,7 +1,6 @@
 package com.myjava.ocp.lab01;
 
 public class MaskSystem {
-
     public static void main(String[] args) {
         Mask m1 = new Mask();
         m1.setColor("Blue");
