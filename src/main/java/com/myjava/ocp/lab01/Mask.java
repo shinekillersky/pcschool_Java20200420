@@ -1,15 +1,14 @@
 package com.myjava.ocp.lab01;
 
 public class Mask {
-
     // 物件屬性
     private String color;
     private boolean child; // 是否是兒童用的
+    // 類別屬性
     public final static int price = 5;
 
     // 建構子
     public Mask() {
-
     }
 
     public Mask(String color, boolean child) {
