@@ -1,7 +1,6 @@
-package com.myjava.ocp.army;
+package com.myjava.ocp.lab08.army;
 
 public class Tank extends Car implements Weapon {
-
     public Tank() {
         System.out.println("Tank...");
     }

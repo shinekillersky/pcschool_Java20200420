@@ -1,7 +1,6 @@
 package com.myjava.ocp.lab07;
 
 public class Animal {
-
     private String name;
 
     public Animal() {

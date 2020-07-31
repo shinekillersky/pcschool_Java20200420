@@ -1,7 +1,6 @@
-package com.myjava.ocp.army;
+package com.myjava.ocp.lab08.army;
 
 public class Truck extends Car {
-
     public Truck() {
         System.out.println("Truck...");
     }

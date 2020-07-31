@@ -4,7 +4,6 @@ import com.myjava.ocp.lab08.power.spec.Device;
 import com.myjava.ocp.lab08.power.spec.Price;
 
 public class Phone implements Device, Price {
-
     @Override
     public int getVolt() {
         return 5;

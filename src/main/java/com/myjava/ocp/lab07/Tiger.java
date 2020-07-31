@@ -1,7 +1,6 @@
 package com.myjava.ocp.lab07;
 
 public class Tiger extends Cat {
-
     public Tiger(String name) {
         super(name);
     }

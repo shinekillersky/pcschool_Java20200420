@@ -4,7 +4,6 @@ import com.myjava.ocp.lab08.power.spec.Car;
 import com.myjava.ocp.lab08.power.spec.Price;
 
 public class BMW implements Car, Price {
-
     @Override
     public int speed() {
         return 400;

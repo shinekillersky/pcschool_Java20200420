@@ -1,11 +1,9 @@
 package com.myjava.ocp.lab08;
 
 public class DogMain {
-
     public static void main(String[] args) {
         Chihuahua chihuahua = new Chihuahua();        
-        Shiba shiba = new Shiba();
-        
+        Shiba shiba = new Shiba();        
         chihuahua.eat();
         chihuahua.skill();
         shiba.eat();

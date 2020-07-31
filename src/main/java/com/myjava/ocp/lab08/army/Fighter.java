@@ -1,7 +1,6 @@
-package com.myjava.ocp.army;
+package com.myjava.ocp.lab08.army;
 
 public class Fighter extends Airplane implements Weapon {
-
     public Fighter() {
         System.out.println("Fighter...");
     }

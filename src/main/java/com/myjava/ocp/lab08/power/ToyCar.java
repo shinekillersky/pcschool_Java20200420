@@ -3,7 +3,6 @@ package com.myjava.ocp.lab08.power;
 import com.myjava.ocp.lab08.power.spec.Car;
 
 public class ToyCar implements Car {
-
     @Override
     public int speed() {
         return 3;
