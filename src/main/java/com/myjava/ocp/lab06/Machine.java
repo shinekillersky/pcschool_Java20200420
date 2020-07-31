@@ -1,7 +1,6 @@
 package com.myjava.ocp.lab06;
 
 public class Machine {
-
     String name = "機器";
 
     void eat() {

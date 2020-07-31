@@ -1,12 +1,10 @@
 package com.myjava.ocp.lab05;
 
 class CarSystem {
-
     public static void main(String[] args) {
         Wheel wheel = new Wheel();
         wheel.name = "F1方向盤";
-        wheel.price = 100000;
-        
+        wheel.price = 100000;        
         // System.out.println(wheel);
         
         Tire t1 = new Tire();

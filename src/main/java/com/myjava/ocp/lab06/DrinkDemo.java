@@ -4,7 +4,6 @@ import java.util.IntSummaryStatistics;
 import java.util.stream.Stream;
 
 public class DrinkDemo {
-
     public static void main(String[] args) {
         Drink drink = new Drink("焦糖瑪奇朵", 60, 200);
         Drink drink2 = new Drink("拿鐵", 50, 300);
@@ -20,7 +19,7 @@ public class DrinkDemo {
         System.out.println(drink2);
         System.out.println(drink3);
 
-        // 總庫存成本 ?
+        // 總庫存成本
         IntSummaryStatistics stat = Stream.of(drink, drink2, drink3)
                 .mapToInt(d -> d.price * d.stock)
                 .summaryStatistics();

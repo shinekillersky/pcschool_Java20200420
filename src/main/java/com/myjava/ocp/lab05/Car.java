@@ -3,9 +3,8 @@ package com.myjava.ocp.lab05;
 import java.util.Arrays;
 
 public class Car {
-
-    Wheel wheel;
-    Tire[] tires;
+    Wheel wheel; // 方向盤
+    Tire[] tires; // 輪胎
     Engine engine;
     int price;
 
@@ -16,11 +15,9 @@ public class Car {
 
     public void print() {
         System.out.println("方向盤:" + wheel);
-
         for (Tire tire : tires) {
             System.out.println("輪胎:" + tire);
         }
-
         System.out.println("引擎:" + engine);
         System.out.println("價格:" + price);
     }

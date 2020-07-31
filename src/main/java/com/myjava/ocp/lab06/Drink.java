@@ -1,7 +1,6 @@
 package com.myjava.ocp.lab06;
 
 public class Drink {
-
     String name;
     int price;
     int stock;

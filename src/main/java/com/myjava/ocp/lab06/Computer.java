@@ -1,7 +1,6 @@
 package com.myjava.ocp.lab06;
 
 public class Computer extends Machine {
-
     String name = "電腦";
 
     void play() {

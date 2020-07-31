@@ -3,11 +3,9 @@ package com.myjava.ocp.lab04;
 import java.util.Arrays;
 
 public class ForeachDemo {
-
     public static void main(String[] args) {
         int[][] nums = {{10, 20}, {30, 40}};
         int sum = 0;
-
         // 求大於25的數字和
         for (int[] num : nums) {
             for (int n : num) {
@@ -17,7 +15,6 @@ public class ForeachDemo {
             }
         }
         System.out.println(sum);
-
         // Java 8
         // flat 扁平, Map 轉換
         int sum2 = Arrays.stream(nums)

@@ -3,7 +3,6 @@ package com.myjava.ocp.lab06;
 import java.util.Date;
 
 public class Tick {
-
     String name;
     int n;
     static int stock;

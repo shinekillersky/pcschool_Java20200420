@@ -1,7 +1,6 @@
 package com.myjava.ocp.lab06;
 
 public class Phone extends Machine {
-
     String name = "手機";
 
     void play() {

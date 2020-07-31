@@ -1,10 +1,8 @@
 package com.myjava.ocp.lab03;
 
 public class ForTest {
-
     public static void main(String[] args) {
         int y = 0;
-
         y = y++;
         System.out.println(y);
 

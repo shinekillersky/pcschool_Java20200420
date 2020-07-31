@@ -2,7 +2,6 @@ package com.myjava.ocp.lab05;
 
 // 引擎
 public class Engine {
-
     int power;
     int price;
 
