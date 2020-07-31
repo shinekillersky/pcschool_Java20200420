@@ -3,7 +3,6 @@ package com.myjava.ocp.lab09;
 import java.util.Random;
 
 public class FourStarLotto extends ALotto { // 可重複選號
-
     @Override
     public int[] getLotto(int begin, int end, int count) {
         Random r = new Random();
