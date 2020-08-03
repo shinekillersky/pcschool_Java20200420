@@ -1,12 +1,10 @@
 package com.myjava.ocp.lab10;
 
 interface Dog {
-
     void play();
 }
 
 public class PetStore {
-
     public static void main(String[] args) {
         Dog d = new Dog() {
             public void play() {
@@ -16,8 +14,7 @@ public class PetStore {
             public void eat() {
                 System.out.println("骨頭");
             }
-        };
-        
+        };        
         d.play();
         //((PetStore$1)d).eat(); // Java 8 開始已不適用
     }

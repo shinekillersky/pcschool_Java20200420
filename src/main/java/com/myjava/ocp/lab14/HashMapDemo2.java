@@ -4,8 +4,7 @@ import java.util.HashMap;
 
 public class HashMapDemo2 {
     public static void main(String[] args) {
-        HashMap<String, Integer> exam = new HashMap<>();
-        
+        HashMap<String, Integer> exam = new HashMap<>();        
         exam.put("國文", 100);
         exam.put("數學", 80);
         exam.put("英文", 100);

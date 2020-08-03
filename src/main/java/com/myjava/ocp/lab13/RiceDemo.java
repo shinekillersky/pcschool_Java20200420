@@ -9,7 +9,6 @@ import java.util.List;
 import java.util.Scanner;
 
 public class RiceDemo {
-
     public static void main(String[] args) throws Exception {
         List<Rice> list = new LinkedList<>();
         File file = new File("src\\main\\java\\com\\myjava\\ocp\\lab13\\urls.txt");
@@ -28,11 +27,9 @@ public class RiceDemo {
     private static void addData(String urlpath, List list) throws Exception {
         // 1. 抓取資料源
         URL url = new URL(urlpath);
-        String jsonstring = new Scanner(url.openStream(), "UTF-8").useDelimiter("\\A").next();
-        
+        String jsonstring = new Scanner(url.openStream(), "UTF-8").useDelimiter("\\A").next();        
         // 2. 將 json 透過 Gson 轉成 BadRice[]
-        Rice[] rices = new Gson().fromJson(jsonstring, Rice[].class);
-        
+        Rice[] rices = new Gson().fromJson(jsonstring, Rice[].class);        
         // 3. 將 rices 加入到 list 容器
         Collections.addAll(list, rices);
     }

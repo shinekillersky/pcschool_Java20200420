@@ -1,7 +1,6 @@
 package com.myjava.ocp.lab11;
 
 public class EqualsDemo {
-
     public static void main(String[] args) {
         Pen p1 = new Pen("Red", 10);
         Pen p2 = new Pen("Red", 10);

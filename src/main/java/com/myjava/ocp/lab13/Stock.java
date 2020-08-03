@@ -1,7 +1,6 @@
 package com.myjava.ocp.lab13;
 
 public class Stock {
-
     public String 證券代號;
     public String 證券名稱;
     public String 殖利率;

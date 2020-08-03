@@ -1,13 +1,11 @@
 package com.myjava.ocp.lab12;
 
 public class Exam implements Comparable<Exam> {
-
     public static int sort = 1;
     private String subject;
     private Integer score;
 
-    public Exam() {
-        
+    public Exam() {        
     }
 
     public Exam(String subject, Integer score) {

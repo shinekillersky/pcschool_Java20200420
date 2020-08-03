@@ -3,12 +3,10 @@ package com.myjava.ocp.lab11;
 import java.util.Objects;
 
 public class Pen {
-
     private String color;
     private int price;
 
-    public Pen() {
-        
+    public Pen() {        
     }
 
     public Pen(String color, int price) {
@@ -44,25 +42,20 @@ public class Pen {
     public boolean equals(Object obj) {
         if (this == obj) {
             return true;
-        }
-        
+        }        
         if (obj == null) {
             return false;
-        }
-        
+        }        
         if (getClass() != obj.getClass()) {
             return false;
-        }
-        
-        final Pen other = (Pen) obj;
-        
+        }        
+        final Pen other = (Pen) obj;        
         if (this.price != other.price) {
             return false;
         }
         if (!Objects.equals(this.color, other.color)) {
             return false;
-        }
-        
+        }        
         return true;
     }
 

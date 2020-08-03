@@ -18,7 +18,6 @@ enum USCurrency {
 }
 
 public class Coin {
-
     public static void main(String[] args) {
         USCurrency usCoin = USCurrency.NICKLE; // private 不可以 new
         System.out.println(usCoin.getValue() + "美分");

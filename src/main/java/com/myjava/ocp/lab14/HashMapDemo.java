@@ -6,8 +6,7 @@ import java.util.Set;
 
 public class HashMapDemo {
     public static void main(String[] args) {
-        HashMap<String, Integer> exam = new HashMap<>();
-        
+        HashMap<String, Integer> exam = new HashMap<>();        
         exam.put("國文", 100);
         exam.put("數學", 80);
         exam.put("英文", 100);
@@ -17,8 +16,7 @@ public class HashMapDemo {
         System.out.println(exam.values()); // List
         
         // Java 7
-        Set<String> keys = exam.keySet();
-        
+        Set<String> keys = exam.keySet();        
         for (String key : keys) {
             System.out.printf("key: %s value: %d\n", key, exam.get(key));
         }

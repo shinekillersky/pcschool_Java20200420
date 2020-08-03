@@ -6,7 +6,6 @@ import java.util.List;
 import java.util.Scanner;
 
 public class TWSE {
-
     public static void main(String[] args) throws Exception {
         String pathstring = "src\\main\\java\\com\\myjava\\ocp\\lab13\\BWIBBU_d.csv";
         File file = new File(pathstring);
@@ -20,8 +19,7 @@ public class TWSE {
                 String data = row.trim().replace("\"", "");
                 //System.out.println(data);
                 String[] da = data.trim().split(",");
-                Stock stock = new Stock();
-                
+                Stock stock = new Stock();                
                 stock.證券代號 = da[0].trim();
                 stock.證券名稱 = da[1].trim();
                 stock.殖利率 = da[2].trim();

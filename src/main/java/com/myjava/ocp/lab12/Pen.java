@@ -1,7 +1,6 @@
 package com.myjava.ocp.lab12;
 
 public class Pen {
-
     private String color;
 
     public Pen() {

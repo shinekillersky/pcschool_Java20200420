@@ -1,7 +1,6 @@
 package com.myjava.ocp.lab13;
 
 public class Rice {
-
     public String Title;
     public String 編號;
     public String 品名;

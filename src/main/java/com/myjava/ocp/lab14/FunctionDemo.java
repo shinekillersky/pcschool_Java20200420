@@ -7,7 +7,6 @@ import java.util.function.Predicate;
 import java.util.function.Supplier;
 
 public class FunctionDemo {
-
     public static void main(String[] args) {
         // 1. Consumer  接受一個引數，處理後不傳回值            
         Consumer<Integer> consumer = (t) -> System.out.println(t + t);

@@ -1,7 +1,6 @@
 package com.myjava.ocp.lab12;
 
 public class Coin {
-
     private int money;
 
     public Coin(int money) {

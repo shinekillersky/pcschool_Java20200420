@@ -5,7 +5,6 @@ enum Sex {
 }
 
 public class EnumDemo {
-
     public static void main(String[] args) {
         checkSex(Sex.女生);
     }

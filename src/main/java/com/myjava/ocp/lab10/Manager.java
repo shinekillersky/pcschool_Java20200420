@@ -1,7 +1,6 @@
 package com.myjava.ocp.lab10;
 
 public class Manager {
-
     private String name = "John";
 
     public void job() {
@@ -11,7 +10,6 @@ public class Manager {
     }
 
     private class Tech {
-
         private String name = "系統開發";
 
         public void job() {
@@ -21,7 +19,6 @@ public class Manager {
     }
 
     public class Sales {
-
         public void job() {
             System.out.println("對外行銷系統產品");
         }

@@ -4,14 +4,12 @@ import java.util.IntSummaryStatistics;
 import java.util.TreeSet;
 
 public class TreeSetDemo2 {
-
     public static void main(String[] args) {
         Exam.sort = 1;
         Exam e1 = new Exam("國文", 80);
         Exam e2 = new Exam("數學", 90);
         Exam e3 = new Exam("英文", 100);
-        TreeSet<Exam> scores = new TreeSet<>();
-        
+        TreeSet<Exam> scores = new TreeSet<>();        
         scores.add(e1);
         scores.add(e2);
         scores.add(e3);
@@ -19,11 +17,10 @@ public class TreeSetDemo2 {
 
         // Java 8 求總分與平均
         /**
-         * 1. 串流化 2. foreach (驗證) 3. MapXXX 轉換 4. sum() average().getAsDouble()
+         * 1. 串流化 2. foreach (驗證) 3. MapXXX 轉換 4. sum()，average().getAsDouble()
          */
         scores.stream()
                 .forEach(System.out::println); // e -> System.out.println(e)
-
         scores.stream()
                 .mapToInt(e -> e.getScore())
                 .forEach(System.out::println);
@@ -31,18 +28,15 @@ public class TreeSetDemo2 {
         int sum = scores.stream()
                 .mapToInt(e -> e.getScore())
                 .sum();
-
         double avg = scores.stream()
                 .mapToInt(e -> e.getScore())
                 .average()
                 .getAsDouble();
-
         System.out.printf("sum:%d, avg=%.2f\n", sum, avg);
-
+        
         IntSummaryStatistics stat = scores.stream()
                 .mapToInt(e -> e.getScore())
                 .summaryStatistics();
-
         System.out.printf("sum:%d, avg=%.2f\n", stat.getSum(), stat.getAverage());
         System.out.printf("max:%d, min=%d\n", stat.getMax(), stat.getMin());
 
@@ -51,7 +45,6 @@ public class TreeSetDemo2 {
                 .findFirst()
                 .get()
                 .getSubject();
-
         System.out.println(subject);
     }
 }
