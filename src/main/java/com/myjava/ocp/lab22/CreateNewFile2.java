@@ -4,7 +4,6 @@ import java.io.File;
 
 // 建立目錄(路徑、資料夾)及檔案
 public class CreateNewFile2 {
-
     public static void main(String[] args) throws Exception {
         File path = new File("src\\main\\java\\com\\myjava\\ocp\\lab22\\files\\fruit");
         System.out.printf("路徑是否存在: %b\n", path.exists()); // 1.確認目錄是否存在

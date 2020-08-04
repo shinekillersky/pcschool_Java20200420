@@ -3,8 +3,7 @@ package com.myjava.ocp.lab22;
 import java.io.File;
 
 // 找出目標檔案的路徑
-public class SearchFile {
-    
+public class SearchFile {    
     static String targetName = "mouse.txt"; // 設定目標檔案
     
     public static void main(String[] args) {

@@ -5,7 +5,6 @@ import java.io.IOException;
 
 // 建立檔案
 public class CreateNewFile {
-
     public static void main(String[] args) {
         File file = new File("src\\main\\java\\com\\myjava\\ocp\\lab22\\files\\myfile.txt");
         System.out.printf("檔案是否存在: %b\n", file.exists()); // 1.確認檔案是否存在

@@ -7,8 +7,7 @@ import java.io.FileWriter;
 public class Copy {
     public static void main(String[] args) {
         String from = "src\\main\\java\\com\\myjava\\ocp\\lab23\\news.txt";
-        String to = "src\\main\\java\\com\\myjava\\ocp\\lab23\\news_backup.txt";
-        
+        String to = "src\\main\\java\\com\\myjava\\ocp\\lab23\\news_backup.txt";        
         try (FileReader fr = new FileReader(from);
              FileWriter fw = new FileWriter(to)) { // 放在小括號裡面會自動關閉            
             int x;

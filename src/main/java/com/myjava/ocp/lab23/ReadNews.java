@@ -2,7 +2,7 @@ package com.myjava.ocp.lab23;
 
 import java.io.FileReader;
 
-// 讀取文字檔並列印在 console 視窗 
+// 讀取文字檔並列印在console視窗 
 public class ReadNews {
     public static void main(String[] args) {
         String path = "src\\main\\java\\com\\myjava\\ocp\\lab23\\news.txt";
