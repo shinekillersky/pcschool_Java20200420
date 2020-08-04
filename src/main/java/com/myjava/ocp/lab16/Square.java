@@ -1,7 +1,6 @@
 package com.myjava.ocp.lab16;
 
 public class Square {
-
     public Square() {
         System.out.println("Square 物件開始");
     }

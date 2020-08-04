@@ -5,7 +5,6 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
 class ShortTask implements Runnable {
-
     @Override
     public void run() {
         System.out.println("短任務完成");
@@ -13,7 +12,6 @@ class ShortTask implements Runnable {
 }
 
 class LongTask implements Runnable {
-
     @Override
     public void run() {
         try {
@@ -27,8 +25,7 @@ class LongTask implements Runnable {
     }
 }
 
-public class ExecutorDemo3 {
-    
+public class ExecutorDemo3 {    
     public static void main(String[] args) throws Exception {
         ExecutorService es = Executors.newCachedThreadPool();
         es.submit(new ShortTask());

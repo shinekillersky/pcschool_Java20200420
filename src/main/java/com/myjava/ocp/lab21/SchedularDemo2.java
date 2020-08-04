@@ -6,8 +6,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
-public class SchedularDemo2 {
-    
+public class SchedularDemo2 {    
     public static void main(String[] args) {
         Runnable r = () -> {
             int delay = new Random().nextInt(5000);            
@@ -16,10 +15,10 @@ public class SchedularDemo2 {
             } catch (Exception e) {
             }            
             int n = new Random().nextInt(9) + 1;
-            System.out.printf("%d 產生號碼所花的秒數 %.1f, 列印時間: %s\n", n, delay/1000.0, new Date()); // r = 產生隨機號碼
+            System.out.printf("%d 產生號碼所花的秒數 %.1f, 列印時間: %s\n", n, delay / 1000.0, new Date()); // r = 產生隨機號碼
         };
         ScheduledExecutorService service = Executors.newSingleThreadScheduledExecutor();
         service.scheduleWithFixedDelay(r, 1, 3, TimeUnit.SECONDS);
-        // 重複性排程，重複做，初始等待時間 1 秒，之後每隔 3 秒做 1 次
+        // 重複性排程，重複做，初始等待時間1秒，之後每隔3秒做1次
     }
 }

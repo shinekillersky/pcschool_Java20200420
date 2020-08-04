@@ -7,7 +7,6 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 public class CountryMain {
-
     public static void main(String[] args) {
         List<Country> couList = Arrays.asList(
                 new Country("Japan", "ASIA"),
@@ -20,6 +19,7 @@ public class CountryMain {
         
         Map<String, List<String>> regionNames = couList.stream().
                 collect(Collectors.groupingBy(Country::getRegion,
+                        LinkedHashMap::new, // 依照原本順序排序
                         Collectors.mapping(Country::getName, Collectors.toList())));
         System.out.println(regionNames);
     }

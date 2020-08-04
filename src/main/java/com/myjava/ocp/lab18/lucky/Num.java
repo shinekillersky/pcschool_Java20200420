@@ -3,7 +3,6 @@ package com.myjava.ocp.lab18.lucky;
 import java.util.Random;
 
 public class Num extends Thread {
-
     public Num(String string) {
         super(string);
     }

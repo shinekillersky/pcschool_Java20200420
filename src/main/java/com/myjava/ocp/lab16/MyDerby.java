@@ -5,8 +5,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-public class MyDerby {
-    
+public class MyDerby {    
     public static void main(String[] args) {
         String url = "jdbc:derby://localhost:1527/sample";
         String user = "app";

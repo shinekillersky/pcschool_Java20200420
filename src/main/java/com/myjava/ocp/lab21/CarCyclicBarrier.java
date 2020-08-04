@@ -3,8 +3,7 @@ package com.myjava.ocp.lab21;
 import java.util.Random;
 import java.util.concurrent.CyclicBarrier;
 
-class Car extends Thread {
-    
+class Car extends Thread {    
     private CyclicBarrier cb;
 
     public Car(CyclicBarrier cb) {
@@ -25,15 +24,13 @@ class Car extends Thread {
     }
 }
 
-public class CarCyclicBarrier { // 循環屏障
-    
+public class CarCyclicBarrier { // 循環屏障    
     public static void main(String[] args) {
         // CyclicBarrier cb = new CyclicBarrier(3);
-        CyclicBarrier cb = new CyclicBarrier(4, () -> {
+        CyclicBarrier cb = new CyclicBarrier(4, () -> { // 4條執行緒抵達才繼續做
             String tname = Thread.currentThread().getName();
             System.out.printf("%s 執行 -> 完成了\n", tname);
-        });
-        
+        });        
         for(int i=1;i<=4;i++) {
             new Car(cb).start();
         }

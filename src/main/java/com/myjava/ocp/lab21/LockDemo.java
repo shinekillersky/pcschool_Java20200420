@@ -4,7 +4,6 @@ import java.util.Random;
 import java.util.concurrent.locks.ReentrantLock;
 
 class Num implements Runnable {
-
     static ReentrantLock lock = new ReentrantLock();
     
     @Override
@@ -24,8 +23,7 @@ class Num implements Runnable {
     }
 }
 
-public class LockDemo {
-    
+public class LockDemo {    
     public static void main(String[] args) {
         Thread t1 = new Thread(new Num());
         Thread t2 = new Thread(new Num());

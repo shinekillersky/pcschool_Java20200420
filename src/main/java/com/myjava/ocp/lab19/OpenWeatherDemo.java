@@ -5,8 +5,7 @@ import com.google.gson.JsonParser;
 import java.net.URL;
 import java.util.Scanner;
 
-public class OpenWeatherDemo {
-    
+public class OpenWeatherDemo {    
     static Runnable r = () -> {
         try {
             String path = "https://api.openweathermap.org/data/2.5/weather?q=Taipei&appid=794612d0a2869ed6b7c78d427133a5fc";

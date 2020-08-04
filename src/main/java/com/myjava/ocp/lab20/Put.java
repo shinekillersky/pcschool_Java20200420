@@ -1,7 +1,6 @@
 package com.myjava.ocp.lab20;
 
-public class Put {
-    
+public class Put {    
     // synchronized 是鎖定物件，非鎖定程式碼
     synchronized void put() {
         String tName = Thread.currentThread().getName();        

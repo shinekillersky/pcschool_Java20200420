@@ -2,8 +2,7 @@ package com.myjava.ocp.lab19;
 
 import java.util.stream.IntStream;
 
-public class PriorityDemo {
-    
+public class PriorityDemo {    
     public static void main(String[] args) {
         Runnable r1 = () -> {
             IntStream.rangeClosed(1, 1000).forEach(i -> {System.out.printf("小明 %d\n", i);});
@@ -13,8 +12,8 @@ public class PriorityDemo {
         };
         Thread t1 = new Thread(r1);
         Thread t2 = new Thread(r2);
-        t1.setPriority(1); // 數字越大，優先權越高
-        t2.setPriority(10);         
+        t1.setPriority(1); 
+        t2.setPriority(10); // 數字越大，優先權越高        
         t1.start();
         t2.start();
     }

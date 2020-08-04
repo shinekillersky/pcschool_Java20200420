@@ -1,8 +1,7 @@
 package com.myjava.ocp.lab20;
 
 class Account { // 資源物件(帳戶)
-
-    private int money;
+    private int money; // 帳戶餘額
 
     public Account(int money) {
         this.money = money;
@@ -10,13 +9,10 @@ class Account { // 資源物件(帳戶)
 
     public synchronized void withdraw(int m) { // 提款
         String tName = Thread.currentThread().getName();
-
         // 取得帳戶餘額
-        int tmpMoney = money;
-        
+        int tmpMoney = money;        
         // 模擬運作時間
         for(int i=0;i<Integer.MAX_VALUE;i++);
-
         // 判斷帳戶餘額是否足夠 ?
         if (tmpMoney - m >= 0) {
             money = tmpMoney - m;
@@ -28,9 +24,8 @@ class Account { // 資源物件(帳戶)
 }
 
 class Withdraw implements Runnable { // 提款行為
-
-    private int money;
-    private Account account;
+    private int money; // 提款金額
+    private Account account; // 提款帳戶
 
     public Withdraw(int money, Account account) {
         this.money = money;
@@ -44,7 +39,6 @@ class Withdraw implements Runnable { // 提款行為
 }
 
 public class ATM {
-
     public static void main(String[] args) {
         Account account = new Account(10000);
         Withdraw w1 = new Withdraw(5000, account);

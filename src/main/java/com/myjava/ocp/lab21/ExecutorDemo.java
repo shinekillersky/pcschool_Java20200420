@@ -6,8 +6,7 @@ import java.util.Random;
 import java.util.concurrent.Executor;
 
 // 報時器
-class MyTime implements Runnable {
-
+class MyTime implements Runnable {    
     @Override
     public void run() {
         Date now = new Date();
@@ -16,8 +15,7 @@ class MyTime implements Runnable {
     }        
 }
 
-class MyLotto implements Runnable {
-    
+class MyLotto implements Runnable {    
     @Override
     public void run() {
         System.out.printf("Lotto 號碼: %d\n", new Random().nextInt(100));
@@ -25,15 +23,13 @@ class MyLotto implements Runnable {
 }
 
 class MyExecutor implements Executor {
-
     @Override
     public void execute(Runnable r) {
         new Thread(r).start();
     }
 }
 
-public class ExecutorDemo {
-    
+public class ExecutorDemo {    
     public static void main(String[] args) {
         MyExecutor exec = new MyExecutor();
         exec.execute(new MyTime());

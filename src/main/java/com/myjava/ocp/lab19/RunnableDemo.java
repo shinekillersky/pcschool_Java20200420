@@ -4,7 +4,6 @@ import java.util.Date;
 import java.util.Random;
 
 public class RunnableDemo {
-    
     public static void main(String[] args) {
         Runnable r1 = () -> {System.out.println(new Date());}; // 任務 r1            
         Runnable r2 = () -> {System.out.println(new Random().nextInt(100));}; // 任務 r2    

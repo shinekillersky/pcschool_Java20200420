@@ -26,11 +26,12 @@ public class Grouping {
         List<String> fruitNameList = Stream.of(fruits).collect(toList());
         System.out.println(fruitNameList);
         // Java 8 toMap()
+        // 計算各水果字串長度
         // Key 不可重複，所以我們可以藉由
         // fruitNameSet [banana, orange, apple, watermelon, coconut] 來分析
         Map<String, Integer> fruitMap = fruitNameSet
                 .stream()
-                .collect(toMap(String::toString, String::length));
+                .collect(toMap(String::toString, String::length)); 
         System.out.println(fruitMap);
     }
 }

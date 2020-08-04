@@ -1,12 +1,10 @@
 package com.myjava.ocp.lab21;
 
-import java.util.Date;
 import java.util.Random;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 class Lotto implements Runnable {
-
     @Override
     public void run() {
         try {
@@ -18,11 +16,10 @@ class Lotto implements Runnable {
     }
 }
 
-public class MyExecutorService {
-    
+public class MyExecutorService {    
     public static void main(String[] args) {
-        ExecutorService es = Executors.newCachedThreadPool();
-        //ExecutorService es = Executors.newFixedThreadPool(2); // 一次執行兩條執行緒
+        //ExecutorService es = Executors.newCachedThreadPool();
+        ExecutorService es = Executors.newFixedThreadPool(2); // 一次執行兩條執行緒
         for(int i=1;i<=50;i++) {
             es.submit(new Lotto());
         }

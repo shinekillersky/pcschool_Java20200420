@@ -4,7 +4,6 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class InputNumberException {
-
     public static void main(String[] args) {
         System.out.println("請輸入一個數字: ");
         Scanner scanner = new Scanner(System.in);
